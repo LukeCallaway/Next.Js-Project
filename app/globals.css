@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: rgb(242,242,242);
   --foreground: #171717;
+  text-align: center;
+
 }
+
+/* *{
+  border: 1px solid red;
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,4 +24,29 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+input[type='text']{
+  background-color: #ededed;
+}
+
+.header, .todo-form{
+  font-size: 1.5em;
+}
+
+.li-delete-btn{
+  margin-left: 1%;
+  color: red;
+}
+
+.add-todo-btn, .update-todo-btn {
+  background-color: rgb(0,0,255); 
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+}
+
+.add-todo-btn:hover, .update-todo-btn:hover {
+  background-color: rgb(75, 75, 255);
 }
