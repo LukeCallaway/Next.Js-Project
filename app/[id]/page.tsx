@@ -8,7 +8,7 @@ export default async function DisplayTodo(context: {params: {id: number}}) {
 
     return (
     <>
-        <h1>Todo with id</h1>
+        <h1>Update Todo Item</h1>
         <UpdateForm id={id} text={data.text}/>
     </>
   );
