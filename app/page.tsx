@@ -24,6 +24,7 @@ export default async function Home() {
     <>
     <div>
       <h1 className="header">To Do List</h1>
+      <h1 className="header">To Do List</h1>
       <TodoForm updateData={updateData}/>
       <TodoList todos={todos} handleClick={handleClick}/>
     </div>    
